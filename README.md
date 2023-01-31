@@ -38,33 +38,48 @@ Nesse módulo, você mostrará os emails de um usuário recuperados do Microsoft
 
 Para começar, você precisa registrar seu aplicativo Microsoft 365 criando um registro de aplicativo no Azure Active Directory (Azure AD). Para esse módulo, você precisará de um aplicativo com as seguintes configurações:
 
-- Nome: Meu aplicativo
-- Plataforma: SPA (aplicativo de página única)
-- Tipos de conta com suporte: Somente contas neste diretório organizacional (Locatário único)
-- UrIs de redirecionamento: http://localhost:8080
-- Permissões da API: Microsoft Graph User.Read (delegado)
+- **Nome**: Meu aplicativo
+- **Plataforma**: SPA (aplicativo de página única)
+- **Tipos de conta com suporte**: Somente contas neste diretório organizacional (Locatário único)
+- **UrIs de redirecionamento**: http://localhost:8080
+- **Permissões da API**: Microsoft Graph User.Read (delegado)
 
 Criar um novo registro de aplicativo do Azure Active Directory seguindo essas etapas:
 
 1 - No navegador da Web, vá para o Centro de administração do Azure Active Directory (https://aad.portal.azure.com).
 
-2 - No menu, selecione Azure Active Directory .
+2 - No menu, selecione **Azure Active Directory**.
 
 <p align="center">
   <img alt="...." src="./assets/azure-active-directory.png" width="80%">
 </p>
 
+3 - Selecione **Registros de aplicativos**.
 
+4 - Crie um novo registro de aplicativo selecionando **Novo registro**.
 
+<p align="center">
+  <img alt="...." src="./assets/new-registration.png" width="80%">
+</p>
 
+5 - Na tela **Registrar um aplicativo**, insira os seguintes valores:
 
+- **Nome**: insira o nome do seu aplicativo.
+- **Tipos de conta com suporte**: selecione **Contas somente nesse diretório organizacional (locatário único)**.
+- URI de Redirecionamento (opcional): selecione **SPA (aplicativo de página única)** e insira `http://localhost:8080`.
+- Selecione **Registrar**.
 
+<p align="center">
+  <img alt="...." src="./assets/register-app.png" width="80%">
+</p>
 
+6 - Depois que o aplicativo for registrado com êxito, selecione **Visão geral**.
 
+7 - Copie os valores da **ID do aplicativo (cliente)** e da **ID do Diretório (locatário)** e salve os valores em algum lugar. Você precisará deles nas próximas etapas.
 
-
-
-
+<p align="center">
+  <img alt="...." src="./assets/app-id.png" width="80%">
+</p>
 
 
 
